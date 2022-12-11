@@ -1,0 +1,53 @@
+body {
+    background-color: hsl(257, 40%, 49%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    
+    background-image: url('../images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+.logo {
+    width: 30vw;
+}
+
+.img-fundo {
+    width: 70vw;
+}
+
+.titulo {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.paragrafo {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.botao {
+    border: none;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(257, 40%, 49%);
+    padding: 10px 20px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
