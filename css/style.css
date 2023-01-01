@@ -5,34 +5,49 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-
 }
 
-.cabecalho {
+.caixa-imagens {
     display: flex;
     flex-direction: column;
     
     background-image: url('../images/bg-mobile.svg');
     background-repeat: no-repeat;
     background-size: 100vw;
+    height: 50vh;
 }
 
 .logo {
     width: 30vw;
+    margin: 30px;
 }
 
 .img-fundo {
     width: 70vw;
+    align-self: center;
+}
+
+.caixa-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 30px;
 }
 
 .titulo {
     font-family: 'Poppins', sans-serif;
     color: white;
+    font-size: 1.4em;
+    margin: 10px;
 }
 
 .paragrafo {
     font-family: 'Open Sans', sans-serif;
     color: white;
+    font-size: 1.1em;
+    line-height: 25px;
 }
 
 .botao {
@@ -40,14 +55,9 @@ body {
     border-radius: 20px;
     font-family: 'Open Sans', sans-serif;
     color: hsl(257, 40%, 49%);
-    padding: 10px 20px;
+    padding: 10px 55px;
+    font-size: 0.8em;
+    box-shadow: 2px 1.5px hsl(257, 23%, 43%);
 }
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-}
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
