@@ -19,12 +19,15 @@ body {
 
 .logo {
     width: 30vw;
-    margin: 30px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
 }
 
 .img-fundo {
     width: 70vw;
     align-self: center;
+    margin-top: 60px;
 }
 
 .caixa-texto {
@@ -57,7 +60,12 @@ body {
     color: hsl(257, 40%, 49%);
     padding: 10px 55px;
     font-size: 0.8em;
-    box-shadow: 2px 1.5px hsl(257, 23%, 43%);
+    box-shadow: 2px 1.5px 8px hsl(0, 0%, 22%);
+    margin: 20px;
+}
+.botao:hover {
+    color: #ffffff;
+    background-color: hsl(300, 69%, 71%);
 }
 
 .rodape {
@@ -81,4 +89,58 @@ body {
     font-size: 0.8em;
     width: 12px;
     text-align: center;
+}
+
+@media only screen and (min-width:700px) {
+    .container {
+        background-image: url('../images/bg-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        height: 100vh;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 50px;
+    }
+
+    .logo {
+        width: 15vw;
+        margin: 10px 20px;
+    }
+
+    .caixa-imagens {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .img-fundo {
+        width: 30vw;
+    }
+    .caixa-texto {
+        width: 40vw;
+        text-align: left;
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .titulo {
+        font-size: 3em;
+        margin-left: 0;
+    }
+    
+    .botao {
+        border-radius: 30px;
+        padding: 15px 60px;
+        font-size: 1.1em;
+        margin-left: 0;
+        align-self: flex-start;
+    }
+    
+    .rodape {
+        height: 100px;
+    }
+    
+    .icons {
+        padding: 8px;
+        font-size: 1.1em;
+        width: 20px;
+    }
 }
